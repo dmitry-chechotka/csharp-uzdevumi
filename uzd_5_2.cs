@@ -16,6 +16,13 @@ namespace uzd_5_2
             {
                 if (currently_space == true):
                     if (input[index] == "a"):
+                        for (int i = index; i < input.Length; i++)
+                        {
+                            if (input[i] == " "):
+                                currently_space = true;
+                            else:
+                                currently_space = false;
+                        }
                         
                 if (input[index] == " "):
                     currently_space = true;
